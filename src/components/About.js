@@ -13,11 +13,11 @@ export default function About() {
                         textAlign: 'center',
                     }}
                 >
-                    <Card.Title>About me!</Card.Title>
-                    <Card.Body style={{ margin: 'auto' }}>
-                        <p>
+                    <Card.Title >About me!</Card.Title>
+                    <Card.Body style={{ margin: 'auto',  }}>
+                        <Card.Text>
                             Hello and welcome to my portfolio! Thank you for
-                            stopping by!My name is Malik Kouyate and welcome to
+                            stopping by! My name is Malik Kouyate and welcome to
                             my journey towards becoming a developer! Why a
                             developer you may ask? Well, all my life I have
                             always been intrigued by the process of having an
@@ -36,7 +36,7 @@ export default function About() {
                             Anyway, Thanks again for visiting my website! Fairly
                             basic at the moment but I hope to spice it up as I
                             learn more!
-                        </p>
+                        </Card.Text>
                     </Card.Body>
                 </Card>
             </Container>
