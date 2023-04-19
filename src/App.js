@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 // import './App.css';
 import React from 'react';
 import {
@@ -9,7 +8,7 @@ import {
 } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './pages/Header';
-import Home from './components/Home';
+import Footer from './pages/Footer';
 import About from './components/About';
 import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
@@ -22,18 +21,21 @@ function App() {
                     <Header />
                     <div>
                         <Routes>
-                            <Route path="/Home" element={<Home />} />
+                            {/* <Route path="/Home" element={<Home />} /> */}
                             <Route path="/About" element={<About />} />
                             <Route path="/Portfolio" element={<Portfolio />} />
                             <Route path="/Contact" element={<Contact />} />
                             <Route path="/Resume" element={<Resume />} />
                             <Route
                                 path="*"
-                                element={<Navigate to="/Home" replace={true} />}
+                                element={
+                                    <Navigate to="/About" replace={true} />
+                                }
                             />
                         </Routes>
                     </div>
                 </div>
+                <Footer />
             </Router>
         </div>
     );
