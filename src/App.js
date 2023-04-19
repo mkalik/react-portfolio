@@ -19,7 +19,16 @@ function App() {
             <Router>
                 <div>
                     <Header />
-                    <div>
+                    <div
+                        style={{
+                            display: 'flex',
+                            justifyContent: 'center',
+                            minHeight: '70vh',
+                            minWidth: '90vw',
+
+                            margin: 'auto',
+                        }}
+                    >
                         <Routes>
                             {/* <Route path="/Home" element={<Home />} /> */}
                             <Route path="/About" element={<About />} />
